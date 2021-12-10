@@ -1,0 +1,12 @@
+C:\Users\ayse.elgoren\source\repos\MovieStore\EntitiesLayer\bin\Debug\net6.0\EntitiesLayer.deps.json
+C:\Users\ayse.elgoren\source\repos\MovieStore\EntitiesLayer\bin\Debug\net6.0\EntitiesLayer.dll
+C:\Users\ayse.elgoren\source\repos\MovieStore\EntitiesLayer\bin\Debug\net6.0\ref\EntitiesLayer.dll
+C:\Users\ayse.elgoren\source\repos\MovieStore\EntitiesLayer\bin\Debug\net6.0\EntitiesLayer.pdb
+C:\Users\ayse.elgoren\source\repos\MovieStore\EntitiesLayer\obj\Debug\net6.0\EntitiesLayer.csproj.AssemblyReference.cache
+C:\Users\ayse.elgoren\source\repos\MovieStore\EntitiesLayer\obj\Debug\net6.0\EntitiesLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ayse.elgoren\source\repos\MovieStore\EntitiesLayer\obj\Debug\net6.0\EntitiesLayer.AssemblyInfoInputs.cache
+C:\Users\ayse.elgoren\source\repos\MovieStore\EntitiesLayer\obj\Debug\net6.0\EntitiesLayer.AssemblyInfo.cs
+C:\Users\ayse.elgoren\source\repos\MovieStore\EntitiesLayer\obj\Debug\net6.0\EntitiesLayer.csproj.CoreCompileInputs.cache
+C:\Users\ayse.elgoren\source\repos\MovieStore\EntitiesLayer\obj\Debug\net6.0\EntitiesLayer.dll
+C:\Users\ayse.elgoren\source\repos\MovieStore\EntitiesLayer\obj\Debug\net6.0\ref\EntitiesLayer.dll
+C:\Users\ayse.elgoren\source\repos\MovieStore\EntitiesLayer\obj\Debug\net6.0\EntitiesLayer.pdb

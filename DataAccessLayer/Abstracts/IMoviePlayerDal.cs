@@ -1,0 +1,16 @@
+﻿using EntitiesLayer.Models;
+using EntitiesLayer.ViewModel.CustomerModel;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccessLayer.Abstracts
+{
+    public interface IMoviePlayerDal : IRepositoryBase<MoviePlayer>
+    {
+        MoviePlayer IsThere(MoviePlayerModel model);
+
+    }
+}

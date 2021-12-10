@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8": {
+      "ProjectGuid": "8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8",
+      "DisplayName": "DataAccessLayer",
+      "ColorIndex": 0
+    },
+    "a7c0d59b-6042-4873-a4a5-728487c78705": {
+      "ProjectGuid": "a7c0d59b-6042-4873-a4a5-728487c78705",
+      "DisplayName": "BusinessLayer",
+      "ColorIndex": 1
+    },
+    "72d205c9-8c70-45a8-a66d-f0a995a9e1e8": {
+      "ProjectGuid": "72d205c9-8c70-45a8-a66d-f0a995a9e1e8",
+      "DisplayName": "EntitiesLayer",
+      "ColorIndex": 2
+    },
+    "b257ac96-063f-4880-a0bf-0de408c61cf9": {
+      "ProjectGuid": "b257ac96-063f-4880-a0bf-0de408c61cf9",
+      "DisplayName": "WebAPI",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}
