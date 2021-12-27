@@ -34,6 +34,7 @@ namespace BusinessLayer.Middlewares
 
                 message = "[Response] HTTP " + context.Request.Method + " - " + context.Request.Path + " responded " + context.Response.StatusCode + " in " + watch.Elapsed.TotalMilliseconds + "ms";
                 _loggerService.Write(message);
+
             }
             catch (Exception ex)
             {

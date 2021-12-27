@@ -20,11 +20,8 @@ namespace WebAPI.Controllers
         [HttpPost]
         public IActionResult Buy(OrderModel model)
         {
-            var result = _orderService.Buy(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Message);
+            _orderService.Buy(model);
+            return Ok();
         }
 
         // Müşterinin satın aldığı filmler
@@ -32,10 +29,7 @@ namespace WebAPI.Controllers
         public IActionResult GetAll([FromQuery]int customerId)
         {
             var result = _orderService.CustomerPurchasedList(customerId);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.ResultList);
+            return Ok(result);
         }
     }
 }

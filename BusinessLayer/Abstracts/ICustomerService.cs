@@ -1,5 +1,4 @@
-﻿using BusinessLayer.Result;
-using EntitiesLayer.Models;
+﻿using EntitiesLayer.Models;
 using EntitiesLayer.ViewModel.CustomerModel;
 using System;
 using System.Collections.Generic;
@@ -11,7 +10,7 @@ namespace BusinessLayer.Abstracts
 {
     public interface ICustomerService 
     {
-        Response Add(CreateCustomerModel model);
-        Response Delete(DeleteCustomerModel model);
+        void Add(CreateCustomerModel model);
+        void Delete(DeleteCustomerModel model);
     }
 }

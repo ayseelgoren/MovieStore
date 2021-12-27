@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using BusinessLayer.Abstracts;
-using BusinessLayer.Result;
 using BusinessLayer.ValidationRules.FluentValidation;
 using DataAccessLayer.Abstracts;
 using EntitiesLayer.Models;
 using EntitiesLayer.ViewModel.CustomerModel;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,40 +22,28 @@ namespace BusinessLayer.Concretes
             _dal = dal;
             _mapper = mapper;
         }
-        public Response Add(CreateCustomerModel model)
+        public void Add(CreateCustomerModel model)
         {
-            // Müşteri sistemde olup olmadığı kontrol edilir
             var customer = _dal.IsThere(model);
             if (customer is not null)
-                return new Response(false,message:"Müşteri sistemde bulunmaktadır.",null);
+                throw new InvalidOperationException("Müşteri sistemde bulunmaktadır.");
           
             customer = _mapper.Map<Customer>(model);
-            //Validasyon kontrolü yapılır.
             var validator = new CustomerValidator();
-            var validationResult = validator.Validate(customer);
-            if (!validationResult.IsValid)
-                return new Response(false, message: "", errors: validationResult.Errors);
-
+            validator.ValidateAndThrow(customer);
             _dal.Add(customer);
-            return new Response(true, message: "Müşteri eklenmiştir.",null);
         }
 
-        public Response Delete(DeleteCustomerModel model)
+        public void Delete(DeleteCustomerModel model)
         {
-            // Yazarın sistemde olup olmadığı kontrol edilir
             var customer = _dal.IsThere(model);
             if (customer is null)
-                return new Response(false, message: "Müşteri sistemde bulunmamaktadır.",null);
+                throw new InvalidOperationException("Müşteri sistemde bulunmamaktadır.");
 
             customer = _mapper.Map<Customer>(model);
-            //Validasyon kontrolü yapılır.
             var validator = new CustomerValidator();
-            var validationResult = validator.Validate(customer);
-            if (!validationResult.IsValid)
-                return new Response(false, message: "", errors: validationResult.Errors);
-
+            validator.ValidateAndThrow(customer);
             _dal.Delete(customer);
-            return new Response(true, message: "Müşteri silinmiştir.",null);
 
         }
     }

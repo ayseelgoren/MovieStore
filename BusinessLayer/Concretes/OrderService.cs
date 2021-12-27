@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using BusinessLayer.Abstracts;
-using BusinessLayer.Result;
 using DataAccessLayer.Abstracts;
 using DataAccessLayer.Concretes;
 using EntitiesLayer.Models;
@@ -25,11 +24,11 @@ namespace BusinessLayer.Concretes
             _mapper = mapper;
         }
         /*  Filmi sistemden satın al. Alma işleminde filmin status değeri false yapılarak filmin satıldığı belirtilir.  */
-        public Response Buy(OrderModel model)
+        public void Buy(OrderModel model)
         {
             var movie = _movieDal.IsThereId(model.MovieId);
             if (movie is null)
-                return new Response(false, message: "Film sistemde bulunmamaktadır.",null);
+                throw new InvalidOperationException("Film sistemde bulunmamaktadır.");
 
             var order = _mapper.Map<Order>(model);
             order.Date = DateTime.Now;
@@ -38,17 +37,16 @@ namespace BusinessLayer.Concretes
             // Delete işlemiyle status durumunu false yaparak diğer satın alma durumlarını kapatıyoruz.
             movie.Status = false;
             _movieDal.Update(movie);
-            return new Response(true, message: "Film Satın alınmıştır.",null);
         }
 
-        public ResponseList<OrdersModel> CustomerPurchasedList(int customerId)
+        public List<OrdersModel> CustomerPurchasedList(int customerId)
         {
             var orders = _orderDal.GetAllCustomer(customerId);
             if (orders is null)
-                return new ResponseList<OrdersModel>(false, "Hata meydana geldi", null, null);
+                throw new InvalidOperationException("Hata meydana geldi");
 
             List<OrdersModel> orderModels = _mapper.Map<List<OrdersModel>>(orders);
-            return new ResponseList<OrdersModel>(true, "Oyuncular listelenmiştir.", null, orderModels);
+            return orderModels;
         }
     }
 }

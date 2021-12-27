@@ -19,9 +19,6 @@ namespace WebAPI.Controllers
         public IActionResult Login(LoginCustomerModel model)
         {
             var result = _authenticationService.Login(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
             return Ok(result);
 
         }

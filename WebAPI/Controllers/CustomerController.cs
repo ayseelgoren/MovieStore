@@ -18,21 +18,15 @@ namespace WebAPI.Controllers
         [HttpDelete]
         public IActionResult Delete(DeleteCustomerModel model)
         {
-            var result = _customerService.Delete(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Message);
+            _customerService.Delete(model);
+            return Ok();
         }
 
         [HttpPost]
         public IActionResult Insert(CreateCustomerModel model)
         {
-            var result = _customerService.Add(model);
-            if(result.Status == false)
-                return BadRequest(result);
-            
-            return Ok(result.Message);
+            _customerService.Add(model);
+            return Ok();
 
         }
 

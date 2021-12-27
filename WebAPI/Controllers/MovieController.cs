@@ -18,40 +18,28 @@ namespace WebAPI.Controllers
         public IActionResult GetAll()
         {
             var result = _movieService.GetAll();
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.ResultList);
+            return Ok(result);
         }
 
         [HttpPost]
         public IActionResult Insert(CreateMovieModel model)
         {
-            var result = _movieService.Add(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Message);
+            _movieService.Add(model);
+            return Ok();
         }
 
         [HttpPut]
         public IActionResult Update(UpdateMovieModel model)
         {
-            var result = _movieService.Update(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Message);
+            _movieService.Update(model);
+            return Ok();
         }
 
         [HttpDelete]
         public IActionResult Delete(DeleteMovieModel model)
         {
-            var result = _movieService.Delete(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Message);
+            _movieService.Delete(model);
+            return Ok();
         }
     }
 }

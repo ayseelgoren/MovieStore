@@ -1,5 +1,4 @@
-﻿using BusinessLayer.Result;
-using BusinessLayer.TokenOperation.Models;
+﻿using BusinessLayer.TokenOperation.Models;
 using EntitiesLayer.ViewModel.CustomerModel;
 using System;
 using System.Collections.Generic;
@@ -11,6 +10,6 @@ namespace BusinessLayer.Abstracts
 {
     public interface IAuthenticationService
     {
-        ResponseEntity<Token> Login(LoginCustomerModel model);
+        Token Login(LoginCustomerModel model);
     }
 }

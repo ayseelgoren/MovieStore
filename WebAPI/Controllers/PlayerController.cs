@@ -19,51 +19,36 @@ namespace WebAPI.Controllers
         public IActionResult GetAll()
         {
             var result = _playerService.GetAll();
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.ResultList);
+            return Ok(result);
         }
 
         [HttpPost]
         public IActionResult Insert(PlayerModel model)
         {
-            var result = _playerService.Add(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Message);
+             _playerService.Add(model);
+            return Ok();
         }
 
         [HttpPut]
         public IActionResult Update(UpdatePlayerModel model)
         {
-            var result = _playerService.Update(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Message);
+             _playerService.Update(model);
+            return Ok();
         }
 
         [HttpDelete]
         public IActionResult Delete(DeletePlayerModel model)
         {
-            var result = _playerService.Delete(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Message);
+            _playerService.Delete(model);
+            return Ok();
         }
 
         // Oyuncuyu filme ekliyoruz
         [HttpPost("addMovie")]
         public IActionResult AddMovie(MoviePlayerModel model)
         {
-            var result = _playerService.AddMovie(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Message);
+            _playerService.AddMovie(model);
+            return Ok();
         }
 
         // Oyuncuya ait filmleri getiriyoruz
@@ -71,10 +56,7 @@ namespace WebAPI.Controllers
         public IActionResult GetById([FromQuery] int playerId)
         {
             var result = _playerService.GetById(playerId);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Entity);
+            return Ok(result);
         }
     }
 }

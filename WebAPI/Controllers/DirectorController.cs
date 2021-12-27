@@ -19,40 +19,28 @@ namespace WebAPI.Controllers
         public IActionResult GetAll()
         {
             var result = _directorService.GetAll();
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.ResultList);
+            return Ok(result);
         }
 
         [HttpPost]
         public IActionResult Insert(DirectorModel model)
         {
-            var result = _directorService.Add(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Message);
+            _directorService.Add(model);
+            return Ok();
         }
 
         [HttpPut]
         public IActionResult Update(UpdateDirectorModel model)
         {
-            var result = _directorService.Update(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Message);
+            _directorService.Update(model);
+            return Ok();
         }
 
         [HttpDelete]
         public IActionResult Delete(DeleteDirectorModel model)
         {
-            var result = _directorService.Delete(model);
-            if (result.Status == false)
-                return BadRequest(result);
-
-            return Ok(result.Message);
+            _directorService.Delete(model);
+            return Ok();
         }
     }
 }

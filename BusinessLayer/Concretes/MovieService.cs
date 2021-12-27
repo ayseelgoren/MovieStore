@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using BusinessLayer.Abstracts;
-using BusinessLayer.Result;
 using BusinessLayer.ValidationRules.FluentValidation;
 using DataAccessLayer.Abstracts;
 using DataAccessLayer.Concretes;
 using EntitiesLayer.Models;
 using EntitiesLayer.ViewModel.MovieModel;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,66 +23,47 @@ namespace BusinessLayer.Concretes
             _dal = dal;
             _mapper = mapper;
         }
-        public Response Add(CreateMovieModel model)
+        public void Add(CreateMovieModel model)
         {
             var movie = _mapper.Map<Movie>(model);
-
-            //Validasyon kontrolü yapılır.
             var validator = new MovieValidator();
-            var validationResult = validator.Validate(movie);
-            if (!validationResult.IsValid)
-                return new Response(false, message: "", errors: validationResult.Errors);
+            validator.ValidateAndThrow(movie);
 
             _dal.Add(movie);
-            return new Response(true,"Film eklenmiştir.",null);
         }
 
-        public ResponseList<MoviesModel> GetAll()
+        public List<MoviesModel> GetAll()
         {
             var listMovies = _dal.GetAll();
             if (listMovies is null)
-                return new ResponseList<MoviesModel>(false, "Hata meydana geldi", null, null);
+                throw new InvalidOperationException("Filmler bulunmamaktadır.");
 
             List<MoviesModel> moviesModels = _mapper.Map<List<MoviesModel>>(listMovies);
-            return new ResponseList<MoviesModel>(true,"Filmlar listelenmiştir.", null, moviesModels);
+            return moviesModels;
         }
 
-        public Response Update(UpdateMovieModel model)
+        public void Update(UpdateMovieModel model)
         {
             var movie = _mapper.Map<Movie>(model);
-
-            //Validasyon kontrolü yapılır.
             var validator = new MovieValidator();
-            var validationResult = validator.Validate(movie);
-            if (!validationResult.IsValid)
-                return new Response(false, message: "", errors: validationResult.Errors);
-
-            // Filmin sistemde olup olmadığı kontrol edilir
+            validator.ValidateAndThrow(movie);
             movie = _dal.IsThere(movie);
             if (movie is null)
-                return new Response(false, message: "Film sistemde bulunmamaktadır.",null);
+                throw new InvalidOperationException("Film sistemde bulunmamaktadır.");
 
             _dal.Update(movie);
-            return new Response(true, message: "Film güncellenmiştir.",null);
         }
 
-        public Response Delete(DeleteMovieModel model)
+        public void Delete(DeleteMovieModel model)
         {
             var movie = _mapper.Map<Movie>(model);
-
-            //Validasyon kontrolü yapılır.
             var validator = new MovieValidator();
-            var validationResult = validator.Validate(movie);
-            if (!validationResult.IsValid)
-                return new Response(false, message: "", errors: validationResult.Errors);
-
-            // Filmin sistemde olup olmadığı kontrol edilir
+            validator.ValidateAndThrow(movie);
             movie = _dal.IsThere(movie);
             if (movie is null)
-                return new Response(false, message: "Film sistemde bulunmamaktadır.",null);
+                throw new InvalidOperationException("Film sistemde bulunmamaktadır.");
             movie.Status = false;
             _dal.Update(movie);
-            return new Response(true, message: "Film silinmiştir.",null);
         }
     }
 }
