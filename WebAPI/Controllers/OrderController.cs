@@ -1,10 +1,12 @@
 ﻿using BusinessLayer.Concretes;
 using EntitiesLayer.ViewModel.OrderModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class OrderController : ControllerBase
@@ -20,7 +22,7 @@ namespace WebAPI.Controllers
         {
             var result = _orderService.Buy(model);
             if (result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
 
             return Ok(result.Message);
         }
@@ -31,7 +33,7 @@ namespace WebAPI.Controllers
         {
             var result = _orderService.CustomerPurchasedList(customerId);
             if (result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
 
             return Ok(result.ResultList);
         }

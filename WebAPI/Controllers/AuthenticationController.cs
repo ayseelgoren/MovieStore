@@ -20,7 +20,7 @@ namespace WebAPI.Controllers
         {
             var result = _authenticationService.Login(model);
             if (result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
 
             return Ok(result);
 

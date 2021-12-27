@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentValidation.Results;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace BusinessLayer.Result
     public class ResponseEntity<T> : Response
     {
         public T Entity { get; set; }
-        public ResponseEntity(bool status, string message,T entity) : base(status, message)
+        public ResponseEntity(bool status, string message,List<ValidationFailure> errors, T entity) : base(status, message,errors)
         {
             Entity = entity;
         }

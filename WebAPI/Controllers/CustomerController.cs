@@ -20,7 +20,7 @@ namespace WebAPI.Controllers
         {
             var result = _customerService.Delete(model);
             if (result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
 
             return Ok(result.Message);
         }
@@ -30,7 +30,7 @@ namespace WebAPI.Controllers
         {
             var result = _customerService.Add(model);
             if(result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
             
             return Ok(result.Message);
 

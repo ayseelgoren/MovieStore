@@ -17,10 +17,16 @@ namespace DataAccessLayer.Concretes
 
         public void Add(TEntity entity)
         {
-
-            var addedEntity = context.Entry(entity);
-            addedEntity.State = EntityState.Added;
-            context.SaveChanges();
+            try
+            {
+                var addedEntity = context.Entry(entity);
+                addedEntity.State = EntityState.Added;
+                context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw new NotImplementedException("Ekleme işlemi başarısız.");
+            }
         }
 
         public void Delete(TEntity entity)

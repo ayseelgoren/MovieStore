@@ -3,6 +3,7 @@ using BusinessLayer.Abstracts;
 using BusinessLayer.Result;
 using BusinessLayer.TokenOperation;
 using BusinessLayer.TokenOperation.Models;
+using BusinessLayer.ValidationRules.FluentValidation;
 using DataAccessLayer.Abstracts;
 using EntitiesLayer.ViewModel.CustomerModel;
 using Microsoft.Extensions.Configuration;
@@ -28,9 +29,14 @@ namespace BusinessLayer.Concretes
         }
         public ResponseEntity<Token> Login(LoginCustomerModel model)
         {
+            // Validasyon kontrolü yapılır.
+            var validator = new LoginCustomerValidator();
+            var validationResult = validator.Validate(model);
+            if (!validationResult.IsValid)
+                return new ResponseEntity<Token>(false, message: "",validationResult.Errors,null);
 
+            // Müşterinin sistemde var olup-olmadığının kontrol edilmesi
             var user = _dal.IsThereCustomer(model);
-                //_context.Customers.FirstOrDefault(x => x.Email == model.Email && x.Password == model.Password);
             if (user != null)
             {
                 TokenHandler handler = new TokenHandler(_configuration);
@@ -38,11 +44,11 @@ namespace BusinessLayer.Concretes
                 user.RefreshToken = token.RefreshToken;
                 user.RefreshTokenExpireDate = token.Expiration.AddMinutes(5);
                 _dal.Update(user);
-                return new ResponseEntity<Token>(true,"Token üretildi.",token);
+                return new ResponseEntity<Token>(true,"Token üretildi.", null, token);
             }
             else
             {
-                return new ResponseEntity<Token>(false, "Kullanıcı adı-şifre hatalı.", null);
+                return new ResponseEntity<Token>(false, "Kullanıcı adı-şifre hatalı.", null, null);
             }
         }
     }

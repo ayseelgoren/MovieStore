@@ -1,9 +1,12 @@
 using BusinessLayer.Abstracts;
 using BusinessLayer.Concretes;
+using BusinessLayer.Logger;
 using BusinessLayer.Mapping;
+using BusinessLayer.Middlewares;
 using DataAccessLayer.Abstracts;
 using DataAccessLayer.Concretes;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -30,6 +33,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 });
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+builder.Services.AddSingleton<ILoggerService, ConsoleLogger>();
 
 builder.Services.AddSingleton<ICustomerDal>(new CustomerDal());
 builder.Services.AddSingleton<ICustomerService,CustomerService>();
@@ -64,9 +69,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-//app.UseAuthentication();
+app.UseAuthentication();
 
 app.UseAuthorization();
+
+app.UseCustomExceptionMiddle();
 
 app.MapControllers();
 

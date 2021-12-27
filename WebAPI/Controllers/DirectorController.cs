@@ -20,7 +20,7 @@ namespace WebAPI.Controllers
         {
             var result = _directorService.GetAll();
             if (result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
 
             return Ok(result.ResultList);
         }
@@ -30,7 +30,7 @@ namespace WebAPI.Controllers
         {
             var result = _directorService.Add(model);
             if (result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
 
             return Ok(result.Message);
         }
@@ -40,7 +40,7 @@ namespace WebAPI.Controllers
         {
             var result = _directorService.Update(model);
             if (result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
 
             return Ok(result.Message);
         }
@@ -50,7 +50,7 @@ namespace WebAPI.Controllers
         {
             var result = _directorService.Delete(model);
             if (result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
 
             return Ok(result.Message);
         }

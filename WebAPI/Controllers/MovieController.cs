@@ -19,7 +19,7 @@ namespace WebAPI.Controllers
         {
             var result = _movieService.GetAll();
             if (result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
 
             return Ok(result.ResultList);
         }
@@ -29,7 +29,7 @@ namespace WebAPI.Controllers
         {
             var result = _movieService.Add(model);
             if (result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
 
             return Ok(result.Message);
         }
@@ -39,7 +39,7 @@ namespace WebAPI.Controllers
         {
             var result = _movieService.Update(model);
             if (result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
 
             return Ok(result.Message);
         }
@@ -49,7 +49,7 @@ namespace WebAPI.Controllers
         {
             var result = _movieService.Delete(model);
             if (result.Status == false)
-                return BadRequest(result.Message);
+                return BadRequest(result);
 
             return Ok(result.Message);
         }
