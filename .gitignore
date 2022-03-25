@@ -1,0 +1,5 @@
+bin
+obj
+packages
+MovieStore.csproj.user
+MovieStore.csproj.vspscc

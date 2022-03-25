@@ -1,0 +1,585 @@
+﻿++Solution 'MovieStore' ‎(4 of 4 projects)
+i:{00000000-0000-0000-0000-000000000000}:MovieStore.sln
+++DataAccessLayer
+i:{00000000-0000-0000-0000-000000000000}:DataAccessLayer
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\bin\debug\net6.0\dataaccesslayer.dll
+++Dependencies
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>396
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:>395
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>665
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:>394
+++Abstracts
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\
+++ICustomerDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\icustomerdal.cs
+++IDirectorDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\idirectordal.cs
+++IMovieDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\imoviedal.cs
+++IMoviePlayerDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\imovieplayerdal.cs
+++IOrderDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\iorderdal.cs
+++IPlayerDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\iplayerdal.cs
+++IRepositoryBase.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\irepositorybase.cs
+++Concretes
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\
+++CustomerDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\customerdal.cs
+++DirectorDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\directordal.cs
+++MovieDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\moviedal.cs
+++MoviePlayerDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\movieplayerdal.cs
+++OrderDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\orderdal.cs
+++PlayerDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\playerdal.cs
+++RepositoryBase.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\repositorybase.cs
+++Migrations
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\migrations\
+++MovieStoreDbContext.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\moviestoredbcontext.cs
+++Analyzers
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:analyzers
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:analyzers
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:analyzers
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:analyzers
+++Frameworks
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:frameworks
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:frameworks
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:frameworks
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:frameworks
+++Packages
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:packages
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:packages
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:packages
+++Projects
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:projects
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:projects
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:projects
+++20211209135958_mig1.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\migrations\20211209135958_mig1.cs
+++MovieStoreDbContextModelSnapshot.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\migrations\moviestoredbcontextmodelsnapshot.cs
+++Microsoft.AspNetCore.App.Analyzers
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\microsoft.netcore.app
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\microsoft.netcore.app
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\microsoft.netcore.app
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\microsoft.netcore.app
+++AutoMapper (10.1.1)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>682
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:>708
+++EntityFramework (6.4.4)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>685
+++Microsoft.AspNetCore.Authentication.JwtBearer (6.0.0)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>683
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>731
+++Microsoft.EntityFrameworkCore (6.0.0)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>679
+++Microsoft.EntityFrameworkCore.Design (6.0.0)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>681
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.0)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>680
+++Microsoft.EntityFrameworkCore.Tools (6.0.0)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>684
+++EntitiesLayer
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\bin\debug\net6.0\entitieslayer.dll
+i:{00000000-0000-0000-0000-000000000000}:EntitiesLayer
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\bin\debug\net6.0\entitieslayer.dll
+++20211209135958_mig1.Designer.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\migrations\20211209135958_mig1.designer.cs
+++Models
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\
+++ViewModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\
+++CustomerModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\customermodel\
+++DirectorModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\directormodel\
+++MovieModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\moviemodel\
+++MoviePlayerModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\movieplayermodel\
+++OrderModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\ordermodel\
+++PlayerModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\playermodel\
+++Customer.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\customer.cs
+++Director.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\director.cs
+++Genre.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\genre.cs
+++Movie.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\movie.cs
+++MoviePlayer.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\movieplayer.cs
+++Order.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\order.cs
+++Player.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\player.cs
+++CreateCustomerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\customermodel\createcustomermodel.cs
+++DeleteCustomerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\customermodel\deletecustomermodel.cs
+++LoginCustomerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\customermodel\logincustomermodel.cs
+++DeleteDirectorModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\directormodel\deletedirectormodel.cs
+++DirectorModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\directormodel\directormodel.cs
+++DirectorsModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\directormodel\directorsmodel.cs
+++UpdateDirectorModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\directormodel\updatedirectormodel.cs
+++CreateMovieModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\moviemodel\createmoviemodel.cs
+++DeleteMovieModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\moviemodel\deletemoviemodel.cs
+++MoviesModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\moviemodel\moviesmodel.cs
+++UpdateMovieModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\moviemodel\updatemoviemodel.cs
+++MoviePlayerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\movieplayermodel\movieplayermodel.cs
+++OrderModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\ordermodel\ordermodel.cs
+++OrdersModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\ordermodel\ordersmodel.cs
+++DeletePlayerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\playermodel\deleteplayermodel.cs
+++PlayerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\playermodel\playermodel.cs
+++PlayersModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\playermodel\playersmodel.cs
+++UpdatePlayerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\playermodel\updateplayermodel.cs
+++WebAPI
+i:{00000000-0000-0000-0000-000000000000}:WebAPI
+++Connected Services 
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>666
+++Properties
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\properties\
+++launchSettings.json
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\properties\launchsettings.json
+++Controllers
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\
+++AuthenticationController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\authenticationcontroller.cs
+++CustomerController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\customercontroller.cs
+++DirectorController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\directorcontroller.cs
+++MovieController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\moviecontroller.cs
+++OrderController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\ordercontroller.cs
+++PlayerController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\playercontroller.cs
+++appsettings.json
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\appsettings.json
+++libman.json
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\libman.json
+++Program.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\program.cs
+++No service dependencies discovered
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>667
+++appsettings.Development.json
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\microsoft.aspnetcore.app
+++AutoMapper.Extensions.Microsoft.DependencyInjection (8.1.1)
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>728
+++Microsoft.Extensions.DependencyInjection (6.0.0)
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>730
+++Swashbuckle.AspNetCore (6.2.3)
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>729
+++BusinessLayer
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\businesslayer.dll
+i:{00000000-0000-0000-0000-000000000000}:BusinessLayer
+++Imports
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:>734
+++bin
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\
+++AuthenticationService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\authenticationservice.cs
+++CustomerService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\customerservice.cs
+++DirectorService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\directorservice.cs
+++MovieService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\movieservice.cs
+++OrderService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\orderservice.cs
+++PlayerService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\playerservice.cs
+++Logger
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\logger\
+++ConsoleLogger.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\logger\consolelogger.cs
+++ILoggerService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\logger\iloggerservice.cs
+++Mapping
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\mapping\
+++MappingProfile.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\mapping\mappingprofile.cs
+++Middlewares
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\middlewares\
+++CustomExceptionMiddleware.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\middlewares\customexceptionmiddleware.cs
+++CustomExceptionMiddlewareExtension.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\middlewares\customexceptionmiddlewareextension.cs
+++obj
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\
+++Operations
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\operations\
+++TokenOperations
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\operations\tokenoperations\
+++ValidationRules
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\
+++FluentValidation
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\
+++Sdk.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\sdk\sdk.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.illink.tasks\sdk\sdk.props
+++Sdk.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\sdk\sdk.targets
+++IAuthenticationService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\iauthenticationservice.cs
+++ICustomerService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\icustomerservice.cs
+++IDirectorService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\idirectorservice.cs
+++IMovieService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\imovieservice.cs
+++IOrderService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\iorderservice.cs
+++IPlayerService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\iplayerservice.cs
+++Debug
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\
+++BusinessLayer.csproj.nuget.dgspec.json
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\businesslayer.csproj.nuget.dgspec.json
+++BusinessLayer.csproj.nuget.g.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\businesslayer.csproj.nuget.g.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\businesslayer.csproj.nuget.g.props
+++BusinessLayer.csproj.nuget.g.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\businesslayer.csproj.nuget.g.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\businesslayer.csproj.nuget.g.targets
+++project.assets.json
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\project.assets.json
+++project.nuget.cache
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\project.nuget.cache
+++Token.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\operations\tokenoperations\token.cs
+++TokenHandler.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\operations\tokenoperations\tokenhandler.cs
+++CustomerValidator.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\customervalidator.cs
+++DirectorValidator.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\directorvalidator.cs
+++LoginCustomerValidator.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\logincustomervalidator.cs
+++MoviePlayerValidator.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\movieplayervalidator.cs
+++MovieValidator.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\movievalidator.cs
+++PlayerValidator.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\playervalidator.cs
+++FluentValidation (10.3.6)
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:>707
+++Newtonsoft.Json (13.0.1)
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:>706
+++Microsoft.Common.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.props
+++Microsoft.NET.Sdk.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.props
+++Microsoft.NET.Sdk.BeforeCommon.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.beforecommon.targets
+++Microsoft.CSharp.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.targets
+++Microsoft.NET.Sdk.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.targets
+++Microsoft.NET.Compatibility.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.targets
+++NuGet.Build.Tasks.Pack.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\nuget.build.tasks.pack\build\nuget.build.tasks.pack.targets
+++net6.0
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\
+++Microsoft.NuGet.ImportBefore.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\imports\microsoft.common.props\importbefore\microsoft.nuget.importbefore.props
+++NuGet.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.props
+++Microsoft.NET.Sdk.DefaultItems.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.props
+++Microsoft.NET.Sdk.ImportWorkloads.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.props
+++Microsoft.NET.SupportedTargetFrameworks.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.supportedtargetframeworks.props
+++Microsoft.NET.SupportedPlatforms.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.supportedplatforms.props
+++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.windowssdksupportedtargetplatforms.props
+++Microsoft.NET.Sdk.CSharp.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.props
+++Microsoft.NET.ILLink.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.illink.props
+++Microsoft.NET.Compatibility.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.props
+++Microsoft.NET.PackTool.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.props
+++Microsoft.NET.PackProjectTool.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.props
+++Microsoft.NET.Sdk.WindowsDesktop.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.props
+++Microsoft.NET.Windows.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.windows.props
+++Microsoft.NET.DefaultAssemblyInfo.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.defaultassemblyinfo.targets
+++Microsoft.NET.DefaultOutputPaths.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.defaultoutputpaths.targets
+++Microsoft.NET.Sdk.ImportPublishProfile.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importpublishprofile.targets
+++Microsoft.NET.TargetFrameworkInference.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.targetframeworkinference.targets
+++Microsoft.NET.Sdk.ImportWorkloads.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.targets
+++Microsoft.NET.RuntimeIdentifierInference.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.runtimeidentifierinference.targets
+++Microsoft.NET.EolTargetFrameworks.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.eoltargetframeworks.targets
+++Microsoft.NET.NuGetOfflineCache.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.nugetofflinecache.targets
+++Microsoft.Managed.Before.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.before.targets
+++Microsoft.CSharp.CurrentVersion.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.currentversion.targets
+++Microsoft.Managed.After.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.after.targets
+++Microsoft.NET.Sdk.Common.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.common.targets
+++Microsoft.PackageDependencyResolution.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.packagedependencyresolution.targets
+++Microsoft.NET.Sdk.DefaultItems.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.targets
+++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.frameworkreferenceresolution.targets
+++Microsoft.NET.Sdk.Shared.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.shared.targets
+++Microsoft.NET.DisableStandardFrameworkResolution.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.disablestandardframeworkresolution.targets
+++Microsoft.NET.DesignerSupport.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.designersupport.targets
+++Microsoft.NET.GenerateAssemblyInfo.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.generateassemblyinfo.targets
+++Microsoft.NET.GenerateGlobalUsings.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.generateglobalusings.targets
+++Microsoft.NET.GenerateSupportedRuntime.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.generatesupportedruntime.targets
+++Microsoft.NET.ComposeStore.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.composestore.targets
+++Microsoft.NET.CrossGen.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.crossgen.targets
+++Microsoft.NET.ObsoleteReferences.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.obsoletereferences.targets
+++Microsoft.NET.Publish.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.publish.targets
+++Microsoft.NET.PackTool.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.targets
+++Microsoft.NET.PackProjectTool.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.targets
+++Microsoft.NET.PreserveCompilationContext.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.preservecompilationcontext.targets
+++Microsoft.NET.ConflictResolution.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.conflictresolution.targets
+++Microsoft.NET.Sdk.CSharp.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.targets
+++Microsoft.NET.ILLink.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.illink.targets
+++Microsoft.NET.Sdk.Analyzers.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.analyzers.targets
+++Microsoft.NET.Compatibility.Common.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.common.targets
+++ref
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\ref\
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\ref\
+++BusinessLayer.deps.json
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\businesslayer.deps.json
+++BusinessLayer.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\businesslayer.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\businesslayer.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\ref\businesslayer.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\ref\businesslayer.dll
+++BusinessLayer.pdb
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\businesslayer.pdb
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\businesslayer.pdb
+++BusinessLayer.runtimeconfig.json
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\businesslayer.runtimeconfig.json
+++DataAccessLayer.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\dataaccesslayer.dll
+++DataAccessLayer.pdb
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\dataaccesslayer.pdb
+++EntitiesLayer.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\entitieslayer.dll
+++EntitiesLayer.pdb
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\entitieslayer.pdb
+++.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\.netcoreapp,version=v6.0.assemblyattributes.cs
+++BusinessLayer.AssemblyInfo.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\businesslayer.assemblyinfo.cs
+++BusinessLayer.AssemblyInfoInputs.cache
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\businesslayer.assemblyinfoinputs.cache
+++BusinessLayer.assets.cache
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\businesslayer.assets.cache
+++BusinessLayer.csproj.AssemblyReference.cache
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\businesslayer.csproj.assemblyreference.cache
+++BusinessLayer.csproj.CopyComplete
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\businesslayer.csproj.copycomplete
+++BusinessLayer.csproj.CoreCompileInputs.cache
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\businesslayer.csproj.corecompileinputs.cache
+++BusinessLayer.csproj.FileListAbsolute.txt
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\businesslayer.csproj.filelistabsolute.txt
+++BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\businesslayer.generatedmsbuildeditorconfig.editorconfig
+++BusinessLayer.genruntimeconfig.cache
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\businesslayer.genruntimeconfig.cache
+++BusinessLayer.GlobalUsings.g.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\obj\debug\net6.0\businesslayer.globalusings.g.cs
+++EntityFramework.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\.nuget\packages\entityframework\6.4.4\buildtransitive\netcoreapp3.0\entityframework.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\.nuget\packages\entityframework\6.4.4\build\netcoreapp3.0\entityframework.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\.nuget\packages\entityframework\6.4.4\build\entityframework.props
+++Microsoft.NuGet.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\nuget\17.0\microsoft.nuget.props
+++Microsoft.NETCoreSdk.BundledVersions.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\microsoft.netcoresdk.bundledversions.props
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.windowsforms.props
+++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.wpf.props
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android)
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios)
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst)
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos)
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui)
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos)
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten)
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain)
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain\workloadmanifest.targets
+++Microsoft.CSharp.Core.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.csharp.core.targets
+++Microsoft.CSharp.DesignTime.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.csharp.designtime.targets
+++Microsoft.Common.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.targets
+++Microsoft.ServiceModel.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.servicemodel.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.servicemodel.targets
+++Microsoft.NET.Sdk.DefaultItems.Shared.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.shared.targets
+++Microsoft.NETCoreSdk.BundledCliTools.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\microsoft.netcoresdk.bundledclitools.props
+++Microsoft.NET.DefaultPackageConflictOverrides.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\targets\microsoft.net.defaultpackageconflictoverrides.targets
+++Microsoft.CodeAnalysis.NetAnalyzers.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.props
+++Microsoft.CodeAnalysis.NetAnalyzers.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.targets
+++Microsoft.NET.ILLink.Tasks.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.illink.tasks\build\microsoft.net.illink.tasks.props
+++System.Windows.Forms.Analyzers.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.windowsdesktop\targets\system.windows.forms.analyzers.props
+++Microsoft.Managed.Core.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.targets
+++Microsoft.Managed.DesignTime.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.managed.designtime.targets
+++Microsoft.Common.CurrentVersion.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.currentversion.targets
+++Microsoft.Managed.Core.CurrentVersions.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.currentversions.targets
+++Microsoft.NET.props
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.net.props
+++Microsoft.CodeAnalysis.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\codeanalysis\microsoft.codeanalysis.targets
+++Microsoft.Xaml.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.xaml.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.xaml.targets
+++Microsoft.WorkflowBuildExtensions.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.workflowbuildextensions.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.workflowbuildextensions.targets
+++Microsoft.TeamTest.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\teamtest\microsoft.teamtest.targets
+++NuGet.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.targets
+++Microsoft.Docker.ImportAfter.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.docker.importafter.targets
+++Microsoft.NET.Build.Extensions.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.net.build.extensions.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\microsoft.net.build.extensions\microsoft.net.build.extensions.targets
+++Microsoft.NuGet.ImportAfter.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.nuget.importafter.targets
+++Microsoft.Web.ImportAfter.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.web.importafter.targets
+++EntityFramework.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\.nuget\packages\entityframework\6.4.4\buildtransitive\netcoreapp3.0\entityframework.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\.nuget\packages\entityframework\6.4.4\build\netcoreapp3.0\entityframework.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\.nuget\packages\entityframework\6.4.4\build\entityframework.targets
+++Microsoft.Docker.targets
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\microsoft visual studio\2022\community\msbuild\sdks\microsoft.docker.sdk\build\microsoft.docker.targets

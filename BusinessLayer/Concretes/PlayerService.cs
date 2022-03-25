@@ -83,7 +83,6 @@ namespace BusinessLayer.Concretes
             if (control is not null)
                 throw new InvalidOperationException("Oyuncu zaten filmde oynamaktadır.");
 
-
             _moviePlayerDal.Add(moviePlayer);
         }
 
