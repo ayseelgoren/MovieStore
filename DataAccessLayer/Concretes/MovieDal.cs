@@ -15,7 +15,7 @@ namespace DataAccessLayer.Concretes
         {
             using (MovieStoreDbContext context=new MovieStoreDbContext())
             {
-                return context.Set<Movie>().Include(g => g.Genre).Include(mp=>mp.MoviePlayers).ThenInclude(p=>p.Players).Include(d=>d.Director).Where(x=>x.Status == true).ToList();
+                return context.Set<Movie>().Include(g => g.Genre).Include(mp=>mp.MoviePlayers).ThenInclude(p=>p.Players).Include(d=>d.Writer).Where(x=>x.Status == true).ToList();
             }
         }
         public Movie IsThere(Movie model)

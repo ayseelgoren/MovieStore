@@ -12,7 +12,7 @@ namespace DataAccessLayer
     {
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Player> Players { get; set; }
-        public DbSet<Director> Directors { get; set; }
+        public DbSet<Writer> Writers { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Genre> Genres { get; set; }
@@ -20,7 +20,7 @@ namespace DataAccessLayer
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=MovieStore");
+            optionsBuilder.UseSqlServer(@"Data Source=.;Initial Catalog=MovieStore;Trusted_Connection=true");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

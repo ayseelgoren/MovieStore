@@ -51,12 +51,12 @@ namespace BusinessLayer.Concretes
 
         public List<PlayersModel> GetAll()
         {
-            var listDirectors = _playerDal.GetAll();
-            if (listDirectors is null)
+            var listPlayers = _playerDal.GetAll();
+            if (listPlayers is null)
                throw new InvalidOperationException("Hata meydana geldi");
 
-            List<PlayersModel> directorModels = _mapper.Map<List<PlayersModel>>(listDirectors);
-            return directorModels;
+            List<PlayersModel> playerModels = _mapper.Map<List<PlayersModel>>(listPlayers);
+            return playerModels;
         }
 
         public void Update(UpdatePlayerModel model)

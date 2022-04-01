@@ -5,6 +5,8 @@ using BusinessLayer.Mapping;
 using BusinessLayer.Middlewares;
 using DataAccessLayer.Abstracts;
 using DataAccessLayer.Concretes;
+using DinkToPdf;
+using DinkToPdf.Contracts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -13,6 +15,8 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -42,8 +46,8 @@ builder.Services.AddSingleton<ICustomerService,CustomerService>();
 builder.Services.AddScoped<IMovieDal, MovieDal>();
 builder.Services.AddScoped<IMovieService,MovieService>();
 
-builder.Services.AddSingleton<IDirectorDal>(new DirectorDal());
-builder.Services.AddSingleton<IDirectorService, DirectorService>();
+builder.Services.AddSingleton<IWriterDal>(new WriterDal());
+builder.Services.AddSingleton<IWriterService, WriterService>();
 
 builder.Services.AddSingleton<IMoviePlayerDal>(new MoviePlayerDal());
 

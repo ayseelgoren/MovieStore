@@ -16,7 +16,7 @@ namespace EntitiesLayer.Models
         public bool Status { get; set; } = true;
         public double Price { get; set; }
         public Genre Genre { get; set; }
-        public Director Director { get; set; }
+        public Writer Writer { get; set; }
         [JsonIgnore]
         public ICollection<MoviePlayer> MoviePlayers { get; set; }
 
