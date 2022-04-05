@@ -15,14 +15,14 @@ namespace DataAccessLayer.Concretes
         {
             using (MovieStoreDbContext context = new MovieStoreDbContext())
             {
-                return context.Players.Include(pm => pm.PlayerMovies).ThenInclude(m=>m.Movies).ToList();
+                return context.Players.ToList();
             }
         }
         public Player GetById(int playerId)
         {
             using (MovieStoreDbContext context = new MovieStoreDbContext())
             {
-                return context.Players.Where(x => x.Id == playerId).Include(pm => pm.PlayerMovies).ThenInclude(m => m.Movies).FirstOrDefault();
+                return context.Players.Where(x => x.Id == playerId).FirstOrDefault();
             }
         }
 

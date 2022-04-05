@@ -48,5 +48,15 @@ namespace BusinessLayer.Concretes
             List<OrdersModel> orderModels = _mapper.Map<List<OrdersModel>>(orders);
             return orderModels;
         }
+
+        public List<OrdersModel> GetAll()
+        {
+            var listOrders = _orderDal.GetAll();
+            if (listOrders is null)
+                throw new InvalidOperationException("Sipariş bulunmamaktadır.");
+
+            List<OrdersModel> orderModels = _mapper.Map<List<OrdersModel>>(listOrders);
+            return orderModels;
+        }
     }
 }

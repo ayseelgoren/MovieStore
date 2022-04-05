@@ -8,5 +8,6 @@ namespace BusinessLayer.Concretes
     {
         void Buy(OrderModel model);
         List<OrdersModel> CustomerPurchasedList(int customerId);
+        List<OrdersModel> GetAll();
     }
 }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(MovieStoreDbContext))]
-    [Migration("20220325135043_createDB")]
-    partial class createDB
+    [Migration("20220405085922_create")]
+    partial class create
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -55,6 +55,25 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("EntitiesLayer.Models.Director", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Directors");
+                });
+
             modelBuilder.Entity("EntitiesLayer.Models.Genre", b =>
                 {
                     b.Property<int>("Id")
@@ -63,16 +82,11 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("CustomerId")
-                        .HasColumnType("int");
-
                     b.Property<string>("GenreName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CustomerId");
 
                     b.ToTable("Genres");
 
@@ -102,9 +116,6 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("CustomerId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("DirectorId")
                         .HasColumnType("int");
 
@@ -120,34 +131,37 @@ namespace DataAccessLayer.Migrations
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
-                    b.Property<int>("WriterId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("Year")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CustomerId");
+                    b.HasIndex("DirectorId");
 
                     b.HasIndex("GenreId");
-
-                    b.HasIndex("WriterId");
 
                     b.ToTable("Movies");
                 });
 
             modelBuilder.Entity("EntitiesLayer.Models.MoviePlayer", b =>
                 {
-                    b.Property<int>("PlayersId")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("MoviesId")
                         .HasColumnType("int");
 
-                    b.HasKey("PlayersId", "MoviesId");
+                    b.Property<int>("PlayersId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("MoviesId");
+
+                    b.HasIndex("PlayersId");
 
                     b.ToTable("MoviePlayer");
                 });
@@ -200,63 +214,31 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Players");
                 });
 
-            modelBuilder.Entity("EntitiesLayer.Models.Writer", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Surname")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Writers");
-                });
-
-            modelBuilder.Entity("EntitiesLayer.Models.Genre", b =>
-                {
-                    b.HasOne("EntitiesLayer.Models.Customer", null)
-                        .WithMany("FavoriteGenres")
-                        .HasForeignKey("CustomerId");
-                });
-
             modelBuilder.Entity("EntitiesLayer.Models.Movie", b =>
                 {
-                    b.HasOne("EntitiesLayer.Models.Customer", null)
-                        .WithMany("PurchasedMovies")
-                        .HasForeignKey("CustomerId");
+                    b.HasOne("EntitiesLayer.Models.Director", "Director")
+                        .WithMany("Movies")
+                        .HasForeignKey("DirectorId");
 
                     b.HasOne("EntitiesLayer.Models.Genre", "Genre")
-                        .WithMany()
+                        .WithMany("Movies")
                         .HasForeignKey("GenreId");
 
-                    b.HasOne("EntitiesLayer.Models.Writer", "Writer")
-                        .WithMany("Movies")
-                        .HasForeignKey("WriterId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Director");
 
                     b.Navigation("Genre");
-
-                    b.Navigation("Writer");
                 });
 
             modelBuilder.Entity("EntitiesLayer.Models.MoviePlayer", b =>
                 {
                     b.HasOne("EntitiesLayer.Models.Movie", "Movies")
-                        .WithMany("MoviePlayers")
+                        .WithMany("Players")
                         .HasForeignKey("MoviesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("EntitiesLayer.Models.Player", "Players")
-                        .WithMany("PlayerMovies")
+                        .WithMany("Movies")
                         .HasForeignKey("PlayersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -269,7 +251,7 @@ namespace DataAccessLayer.Migrations
             modelBuilder.Entity("EntitiesLayer.Models.Order", b =>
                 {
                     b.HasOne("EntitiesLayer.Models.Customer", "Customer")
-                        .WithMany()
+                        .WithMany("Orders")
                         .HasForeignKey("CustomerId");
 
                     b.HasOne("EntitiesLayer.Models.Movie", "Movie")
@@ -283,22 +265,25 @@ namespace DataAccessLayer.Migrations
 
             modelBuilder.Entity("EntitiesLayer.Models.Customer", b =>
                 {
-                    b.Navigation("FavoriteGenres");
+                    b.Navigation("Orders");
+                });
 
-                    b.Navigation("PurchasedMovies");
+            modelBuilder.Entity("EntitiesLayer.Models.Director", b =>
+                {
+                    b.Navigation("Movies");
+                });
+
+            modelBuilder.Entity("EntitiesLayer.Models.Genre", b =>
+                {
+                    b.Navigation("Movies");
                 });
 
             modelBuilder.Entity("EntitiesLayer.Models.Movie", b =>
                 {
-                    b.Navigation("MoviePlayers");
+                    b.Navigation("Players");
                 });
 
             modelBuilder.Entity("EntitiesLayer.Models.Player", b =>
-                {
-                    b.Navigation("PlayerMovies");
-                });
-
-            modelBuilder.Entity("EntitiesLayer.Models.Writer", b =>
                 {
                     b.Navigation("Movies");
                 });

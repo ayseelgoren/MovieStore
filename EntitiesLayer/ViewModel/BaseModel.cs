@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntitiesLayer.ViewModel.WriterModel
+namespace EntitiesLayer.ViewModel
 {
-    public class DeleteWriterModel
+    public class BaseModel
     {
-        public int Id { get; set; }
     }
 }

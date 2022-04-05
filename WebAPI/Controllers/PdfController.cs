@@ -3,7 +3,7 @@ using DinkToPdf;
 using DinkToPdf.Contracts;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WebAPI.Utility;
+using WebAPI.Utility.CreatePdf;
 
 namespace WebAPI.Controllers
 {
@@ -12,41 +12,48 @@ namespace WebAPI.Controllers
     public class PdfController : ControllerBase
     {
         private IConverter _converter;
-        private readonly IWriterService _writerService;
+        private readonly IDirectorService _directorService;
+        private readonly IMovieService _movieService;
+        private readonly IOrderService _orderService;
+        private ICreatePdf _createPdf;
 
-        public PdfController(IConverter converter, IWriterService writerService)
+        public PdfController(IConverter converter, 
+            IDirectorService directorService, 
+            IMovieService movieService, 
+            IOrderService orderService, 
+            ICreatePdf createPdf)
         {
             _converter = converter;
-            _writerService = writerService;
+            _directorService = directorService;
+            _movieService = movieService;
+            _orderService = orderService;
+            _createPdf = createPdf;
         }
-        [HttpGet]
-        public IActionResult CreatePDF()
+        [HttpGet,Route("createDirector")]
+        public IActionResult CreateWriterPdf()
         {
-            var globalSettings = new GlobalSettings
-            {
-                ColorMode = ColorMode.Color,
-                Orientation = Orientation.Portrait,
-                PaperSize = PaperKind.A4,
-                Margins = new MarginSettings { Top = 10 },
-                DocumentTitle = "PDF Report",
-                Out = Path.Combine(Directory.GetCurrentDirectory(), "PDF", "Writer_Report.pdf")
-                //Out = @"C:\Users\ayse.elgoren\PDFCreator\Writer_Report.pdf"
-            };
-            var objectSettings = new ObjectSettings
-            {
-                PagesCount = true,
-                HtmlContent = TemplateGenerator.GetHTMLString(_writerService.GetAll()),
-                WebSettings = { DefaultEncoding = "utf-8", UserStyleSheet = Path.Combine(Directory.GetCurrentDirectory(), "assets", "styles.css") },
-                HeaderSettings = { FontName = "Arial", FontSize = 9, Right = "Page [page] of [toPage]", Line = true },
-                FooterSettings = { FontName = "Arial", FontSize = 9, Line = true, Center = "Report Footer" }
-            };
-            var pdf = new HtmlToPdfDocument()
-            {
-                GlobalSettings = globalSettings,
-                Objects = { objectSettings }
-            };
-            _converter.Convert(pdf);
-            return Ok("Successfully created PDF document.");
+            var directors = _directorService.GetAll();
+            var directorPdf = _createPdf.PdfDirector("Director", directors);
+            _converter.Convert(directorPdf);
+            return Ok("Successfully director created PDF document.");
+        }
+
+        [HttpGet, Route("createOrder")]
+        public IActionResult CreateOrderPdf()
+        {
+            var orders = _orderService.GetAll();
+            var orderPdf = _createPdf.PdfOrder("Order", orders);
+            _converter.Convert(orderPdf);
+            return Ok("Successfully orders created PDF document.");
+        }
+
+        [HttpGet, Route("createMovie")]
+        public IActionResult CreateMoviePdf()
+        {
+            var movies = _movieService.GetAll();
+            var moviePdf = _createPdf.PdfMovie("Movie", movies );
+            _converter.Convert(moviePdf);
+            return Ok("Successfully movies created PDF document.");
         }
     }
 }

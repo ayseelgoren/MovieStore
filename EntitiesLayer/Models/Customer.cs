@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace EntitiesLayer.Models
 {
@@ -13,8 +14,6 @@ namespace EntitiesLayer.Models
         public string? Password { get; set; }
         public string? RefreshToken { get; set; }
         public DateTime? RefreshTokenExpireDate { get; set; }
-        public ICollection<Movie> PurchasedMovies { get; set; }
-        public ICollection<Genre> FavoriteGenres { get; set; }
-
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

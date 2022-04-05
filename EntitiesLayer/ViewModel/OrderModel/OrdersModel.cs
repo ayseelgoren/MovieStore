@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer.ViewModel.OrderModel
 {
-    public class OrdersModel
+    public class OrdersModel : BaseModel
     {
         public string MovieName { get; set; }
         public DateTime OrderDate { get; set; }

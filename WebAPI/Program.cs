@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using WebAPI.Utility;
+using WebAPI.Utility.CreatePdf;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,10 +48,11 @@ builder.Services.AddSingleton<ICustomerService,CustomerService>();
 builder.Services.AddScoped<IMovieDal, MovieDal>();
 builder.Services.AddScoped<IMovieService,MovieService>();
 
-builder.Services.AddSingleton<IWriterDal>(new WriterDal());
-builder.Services.AddSingleton<IWriterService, WriterService>();
+builder.Services.AddSingleton<IDirectorDal>(new DirectorDal());
+builder.Services.AddSingleton<IDirectorService, DirectorService>();
 
 builder.Services.AddSingleton<IMoviePlayerDal>(new MoviePlayerDal());
+builder.Services.AddScoped<ICreatePdf, CreatePdf>();
 
 builder.Services.AddSingleton<IPlayerDal>(new PlayerDal());
 builder.Services.AddSingleton<IPlayerService, PlayerService>();

@@ -14,6 +14,7 @@ namespace DataAccessLayer.Abstracts
         void Delete(TEntity entity);
         void Update(TEntity entity);
         List<TEntity> GetAll();
+        void UpdateMatchEntity(TEntity updateEntity, TEntity setEntity);
 
     }
 }

@@ -1865,6 +1865,7 @@
         "dependencies": {
           "AutoMapper": "10.1.1",
           "DataAccessLayer": "1.0.0",
+          "DinkToPdf": "1.0.8",
           "EntitiesLayer": "1.0.0",
           "FluentValidation": "10.3.6",
           "Newtonsoft.Json": "13.0.1"

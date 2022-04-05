@@ -28,30 +28,31 @@ namespace BusinessLayer.Mapping
             CreateMap<CreateMovieModel, Movie>(); 
             CreateMap<UpdateMovieModel, Movie>();
             CreateMap<DeleteMovieModel, Movie>();
-            CreateMap<Movie, MoviesModel>().ForMember(dest => dest.Players, opt => opt.MapFrom(src => src.MoviePlayers.Select(y => y.Players).ToList()))
+            CreateMap<Movie, MoviesModel>().ForMember(dest => dest.Players, opt => opt.MapFrom(src => src.Players.Select(y => y.Players).ToList()))
                                            .ForMember(dest=>dest.IsItSold, opt=>opt.MapFrom(src=>src.Status.ToString()))
                                            .ForMember(dest=>dest.GenreName,opt=>opt.MapFrom(src=>src.Genre.GenreName))
-                                           .ForMember(dest=>dest.Director,opt=>opt.MapFrom(src=>src.Writer.Name+" "+src.Writer.Surname));
+                                           .ForMember(dest=>dest.Director,opt=>opt.MapFrom(src=>src.Director.Name+" "+src.Director.Surname));
             CreateMap<OrderModel, Order>();
 
             CreateMap<MoviePlayerModel, MoviePlayer>();
 
 
-            CreateMap<WriterModel, Writer>();
-            CreateMap<UpdateWriterModel, Writer>();
-            CreateMap<DeleteWriterModel, Writer>();
-            CreateMap<Writer, WritersModel > ();
+            CreateMap<DirectorModel, Director>();
+            CreateMap<UpdateDirectorModel, Director>();
+            CreateMap<DeleteDirectorModel, Director>();
+            CreateMap<Director, DirectorsModel> ();
 
             CreateMap<PlayerModel, Player>();
             CreateMap<UpdatePlayerModel, Player>();
             CreateMap<DeletePlayerModel, Player>();
-            CreateMap<Player, PlayersModel>().ForMember(dest => dest.Movies, opt => opt.MapFrom(src => src.PlayerMovies.Select(y => y.Movies).ToList()));
+            CreateMap<Player, PlayersModel>().ForMember(dest => dest.Movies, opt => opt.MapFrom(src => src.Movies.Select(y => y.Movies).ToList()));
 
             CreateMap<Order, OrdersModel>().ForMember(dest => dest.GenreName, opt => opt.MapFrom(src => src.Movie.Genre.GenreName))
                                           .ForMember(dest => dest.MovieName, opt => opt.MapFrom(src => src.Movie.Name))
                                           .ForMember(dest => dest.Customer, opt => opt.MapFrom(src => src.Customer.Name + " " + src.Customer.Surname))
                                           .ForMember(dest => dest.OrderDate, opt => opt.MapFrom(src => src.Date))
-                                          .ForMember(dest => dest.Director, opt => opt.MapFrom(src => src.Movie.Writer.Name + " " + src.Movie.Writer.Surname));
+                                          .ForMember(dest => dest.Director, opt => opt.MapFrom(src => src.Movie.Director.Name + " " + src.Movie.Director.Surname))
+                                          .ForMember(dest => dest.Players, opt => opt.MapFrom(src => src.Movie.Players.Select(y => y.Players).ToList()));
 
         }
     }

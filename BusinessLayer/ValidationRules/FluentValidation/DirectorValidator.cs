@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.ValidationRules.FluentValidation
 {
-    public class WriterValidator : AbstractValidator<Writer>
+    public class DirectorValidator : AbstractValidator<Director>
     {
-        public WriterValidator()
+        public DirectorValidator()
         {
             RuleFor(d => d.Name).NotEmpty().WithMessage("İsim boş geçilemez.")
                                 .Length(1,15).WithMessage("Karakter uzunluğu 1-15 aralığında olmalıdır.");

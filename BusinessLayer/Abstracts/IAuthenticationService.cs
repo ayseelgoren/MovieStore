@@ -10,6 +10,6 @@ namespace BusinessLayer.Abstracts
 {
     public interface IAuthenticationService
     {
-        Token Login(LoginCustomerModel model);
+         Task<Token> Login(LoginCustomerModel model);
     }
 }

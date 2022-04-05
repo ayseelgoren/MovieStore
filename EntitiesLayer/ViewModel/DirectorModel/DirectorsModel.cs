@@ -8,7 +8,7 @@ using EntitiesLayer.Models;
 
 namespace EntitiesLayer.ViewModel.WriterModel
 {
-    public class WritersModel
+    public class DirectorsModel : BaseModel
     {
         public string? Name { get; set; }
         public string? Surname { get; set; }

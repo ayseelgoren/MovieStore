@@ -8,30 +8,30 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concretes
 {
-    public class WriterDal : RepositoryBase<Writer, MovieStoreDbContext>, IWriterDal
+    public class DirectorDal : RepositoryBase<Director, MovieStoreDbContext>, IDirectorDal
     {
 
-        public override List<Writer> GetAll()
+        public override List<Director> GetAll()
         {
             using (MovieStoreDbContext context = new MovieStoreDbContext())
             {
-                return context.Set<Writer>().Include(m => m.Movies).ThenInclude(p=>p.MoviePlayers).Include(m => m.Movies).ThenInclude(x =>x.Genre).ToList();
+                return context.Set<Director>().Include(m => m.Movies).ThenInclude(x =>x.Genre).ToList();
             }
         }
 
-        public Writer IsThere(Writer model)
+        public Director IsThere(Director model)
         {
             using (MovieStoreDbContext context = new MovieStoreDbContext())
             {
-                return context.Writers.SingleOrDefault(x => x.Name == model.Name && x.Surname == model.Surname);
+                return context.Directors.SingleOrDefault(x => x.Name == model.Name && x.Surname == model.Surname);
             }
         }
 
-        public Writer IsThereId(Writer model)
+        public Director IsThereId(Director model)
         {
             using (MovieStoreDbContext context = new MovieStoreDbContext())
             {
-                return context.Writers.SingleOrDefault(x => x.Id == model.Id);
+                return context.Directors.SingleOrDefault(x => x.Id == model.Id);
             }
         }
     }

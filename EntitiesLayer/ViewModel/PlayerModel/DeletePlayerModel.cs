@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer.ViewModel.PlayerModel
 {
-    public class DeletePlayerModel
+    public class DeletePlayerModel : BaseModel
     {
         public int Id { get; set; }
     }

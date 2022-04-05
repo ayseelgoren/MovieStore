@@ -47,5 +47,24 @@ namespace DataAccessLayer.Concretes
             context.Update(entity);
             context.SaveChanges();
         }
+
+        public virtual void UpdateMatchEntity(TEntity updateEntity, TEntity setEntity)
+        {
+            if (setEntity == null)
+                throw new ArgumentNullException(nameof(setEntity));
+
+            if (updateEntity == null)
+                throw new ArgumentNullException(nameof(updateEntity));
+
+            context.Entry(updateEntity).CurrentValues.SetValues(setEntity);//Tüm kayıtlar, kolon eşitlemesine gitmeden bir entity'den diğerine atanır.
+
+            //Olmayan yani null gelen kolonlar, var olan tablonun üstüne ezilmesin diye ==> "IsModified = false" olarak atanır ve var olan kayıtların null olarak güncellenmesi engellenir.
+            foreach (var property in context.Entry(setEntity).Properties)
+            {
+                if (property.CurrentValue == null) { context.Entry(updateEntity).Property(property.Metadata.Name).IsModified = false; }
+            }
+
+            context.SaveChanges();
+        }
     }
 }

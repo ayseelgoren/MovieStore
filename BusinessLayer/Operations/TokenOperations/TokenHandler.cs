@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,30 +21,47 @@ namespace BusinessLayer.TokenOperation
             Configuration = configuration;
         }
 
+        //Token üretecek metot.
         public Token CreateAccessToken(Customer user)
         {
-            Token token = new Token();
-            SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Token:SecurityKey"]));
-            SigningCredentials signingCredentials = new SigningCredentials(key,SecurityAlgorithms.HmacSha256);
+            Token tokenInstance = new Token();
 
-            token.Expiration=DateTime.Now.AddMinutes(15);
+            //Security  Key'in simetriğini alıyoruz.
+            SymmetricSecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Token:SecurityKey"]));
 
-            JwtSecurityToken securityToken = new JwtSecurityToken ( 
+            //Şifrelenmiş kimliği oluşturuyoruz.
+            SigningCredentials signingCredentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            //Oluşturulacak token ayarlarını veriyoruz.
+            tokenInstance.Expiration = DateTime.Now.AddMinutes(5);
+            JwtSecurityToken securityToken = new JwtSecurityToken(
                 issuer: Configuration["Token:Issuer"],
-                audience: Configuration["Token:Audence"],
-                expires: token.Expiration,
-                notBefore: DateTime.Now,
+                audience: Configuration["Token:Audience"],
+                expires: tokenInstance.Expiration,//Token süresini 5 dk olarak belirliyorum
+                notBefore: DateTime.Now,//Token üretildikten ne kadar süre sonra devreye girsin ayarlıyouz.
                 signingCredentials: signingCredentials
                 );
-            JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
-            token.AccessToken = handler.WriteToken(securityToken);
-            token.RefreshToken = CreateRefreshToken();
-            return token;
+
+            //Token oluşturucu sınıfında bir örnek alıyoruz.
+            JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
+
+            //Token üretiyoruz.
+            tokenInstance.AccessToken = tokenHandler.WriteToken(securityToken);
+
+            //Refresh Token üretiyoruz.
+            tokenInstance.RefreshToken = CreateRefreshToken();
+            return tokenInstance;
         }
 
+        //Refresh Token üretecek metot.
         public string CreateRefreshToken()
         {
-            return Guid.NewGuid().ToString();
+            byte[] number = new byte[32];
+            using (RandomNumberGenerator random = RandomNumberGenerator.Create())
+            {
+                random.GetBytes(number);
+                return Convert.ToBase64String(number);
+            }
         }
     }
 }

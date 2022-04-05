@@ -12,6 +12,7 @@ namespace EntitiesLayer.Models
         [Key]
         public int Id { get; set; }
         public string GenreName { get; set; }
+        public virtual ICollection<Movie> Movies { get; set; }
     }
 
 }

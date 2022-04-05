@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer.ViewModel.CustomerModel
 {
-    public class DeleteCustomerModel
+    public class DeleteCustomerModel : BaseModel
     {
         public int Id { get; set; }
         public string Name { get; set; }

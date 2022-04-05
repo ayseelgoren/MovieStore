@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer.ViewModel.CustomerModel
 {
-    public class CreateCustomerModel
+    public class CreateCustomerModel : BaseModel
     {
         public string Name { get; set; }
         public string Surname { get; set; }

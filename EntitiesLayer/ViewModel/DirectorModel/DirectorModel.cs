@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer.ViewModel.WriterModel
 {
-    public class UpdateWriterModel
+    public class DirectorModel : BaseModel
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
     }

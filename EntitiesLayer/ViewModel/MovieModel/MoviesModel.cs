@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer.ViewModel.MovieModel
 {
-    public class MoviesModel
+    public class MoviesModel : BaseModel
     {
         public string Director { get; set; }
         public string Name { get; set; }

@@ -17,5 +17,15 @@ namespace DataAccessLayer.Concretes
                 return context.Set<Order>().Include(g => g.Movie).Include(p => p.Customer).Where(x => x.CustomerId == customerId).ToList();
             }
         }
+        public override List<Order> GetAll()
+        {
+            using (MovieStoreDbContext context = new MovieStoreDbContext())
+            {
+                return context.Set<Order>().Include(g => g.Movie).ThenInclude(g=>g.Genre)
+                                           .Include(g => g.Movie).ThenInclude(d=>d.Director)
+                                           .Include(g => g.Movie).ThenInclude(d=>d.Players).ThenInclude(d => d.Players)
+                                           .Include(p => p.Customer).ToList();
+            }
+        }
     }
 }

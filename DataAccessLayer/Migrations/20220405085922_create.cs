@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DataAccessLayer.Migrations
 {
-    public partial class createDB : Migration
+    public partial class create : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -28,6 +28,33 @@ namespace DataAccessLayer.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Directors",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Surname = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Directors", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Genres",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    GenreName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Genres", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Players",
                 columns: table => new
                 {
@@ -42,39 +69,6 @@ namespace DataAccessLayer.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Writers",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Surname = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Writers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Genres",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    GenreName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CustomerId = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Genres", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Genres_Customers_CustomerId",
-                        column: x => x.CustomerId,
-                        principalTable: "Customers",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Movies",
                 columns: table => new
                 {
@@ -85,41 +79,35 @@ namespace DataAccessLayer.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Year = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Status = table.Column<bool>(type: "bit", nullable: false),
-                    Price = table.Column<double>(type: "float", nullable: false),
-                    WriterId = table.Column<int>(type: "int", nullable: false),
-                    CustomerId = table.Column<int>(type: "int", nullable: true)
+                    Price = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Movies", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Movies_Customers_CustomerId",
-                        column: x => x.CustomerId,
-                        principalTable: "Customers",
+                        name: "FK_Movies_Directors_DirectorId",
+                        column: x => x.DirectorId,
+                        principalTable: "Directors",
                         principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Movies_Genres_GenreId",
                         column: x => x.GenreId,
                         principalTable: "Genres",
                         principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_Movies_Writers_WriterId",
-                        column: x => x.WriterId,
-                        principalTable: "Writers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
                 name: "MoviePlayer",
                 columns: table => new
                 {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     PlayersId = table.Column<int>(type: "int", nullable: false),
                     MoviesId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MoviePlayer", x => new { x.PlayersId, x.MoviesId });
+                    table.PrimaryKey("PK_MoviePlayer", x => x.Id);
                     table.ForeignKey(
                         name: "FK_MoviePlayer_Movies_MoviesId",
                         column: x => x.MoviesId,
@@ -162,23 +150,18 @@ namespace DataAccessLayer.Migrations
 
             migrationBuilder.InsertData(
                 table: "Genres",
-                columns: new[] { "Id", "CustomerId", "GenreName" },
-                values: new object[] { 1, null, "Korku" });
+                columns: new[] { "Id", "GenreName" },
+                values: new object[] { 1, "Korku" });
 
             migrationBuilder.InsertData(
                 table: "Genres",
-                columns: new[] { "Id", "CustomerId", "GenreName" },
-                values: new object[] { 2, null, "Gerilim" });
+                columns: new[] { "Id", "GenreName" },
+                values: new object[] { 2, "Gerilim" });
 
             migrationBuilder.InsertData(
                 table: "Genres",
-                columns: new[] { "Id", "CustomerId", "GenreName" },
-                values: new object[] { 3, null, "Fantastik" });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Genres_CustomerId",
-                table: "Genres",
-                column: "CustomerId");
+                columns: new[] { "Id", "GenreName" },
+                values: new object[] { 3, "Fantastik" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_MoviePlayer_MoviesId",
@@ -186,19 +169,19 @@ namespace DataAccessLayer.Migrations
                 column: "MoviesId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Movies_CustomerId",
+                name: "IX_MoviePlayer_PlayersId",
+                table: "MoviePlayer",
+                column: "PlayersId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Movies_DirectorId",
                 table: "Movies",
-                column: "CustomerId");
+                column: "DirectorId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Movies_GenreId",
                 table: "Movies",
                 column: "GenreId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Movies_WriterId",
-                table: "Movies",
-                column: "WriterId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Orders_CustomerId",
@@ -223,16 +206,16 @@ namespace DataAccessLayer.Migrations
                 name: "Players");
 
             migrationBuilder.DropTable(
+                name: "Customers");
+
+            migrationBuilder.DropTable(
                 name: "Movies");
 
             migrationBuilder.DropTable(
+                name: "Directors");
+
+            migrationBuilder.DropTable(
                 name: "Genres");
-
-            migrationBuilder.DropTable(
-                name: "Writers");
-
-            migrationBuilder.DropTable(
-                name: "Customers");
         }
     }
 }

@@ -1,0 +1,369 @@
+﻿++Solution 'MovieStore' ‎(4 of 4 projects)
+i:{00000000-0000-0000-0000-000000000000}:MovieStore.sln
+++DataAccessLayer
+i:{00000000-0000-0000-0000-000000000000}:DataAccessLayer
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\bin\debug\net6.0\dataaccesslayer.dll
+++Dependencies
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>394
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:>395
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:>396
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>687
+++Abstracts
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\
+++ICustomerDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\icustomerdal.cs
+++IDirectorDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\idirectordal.cs
+++IMovieDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\imoviedal.cs
+++IMoviePlayerDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\imovieplayerdal.cs
+++IOrderDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\iorderdal.cs
+++IPlayerDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\iplayerdal.cs
+++IRepositoryBase.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\abstracts\irepositorybase.cs
+++Concretes
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\
+++CustomerDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\customerdal.cs
+++DirectorDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\directordal.cs
+++MovieDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\moviedal.cs
+++MoviePlayerDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\movieplayerdal.cs
+++OrderDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\orderdal.cs
+++PlayerDal.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\playerdal.cs
+++RepositoryBase.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\concretes\repositorybase.cs
+++Migrations
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\migrations\
+++MovieStoreDbContext.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\moviestoredbcontext.cs
+++Analyzers
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:analyzers
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:analyzers
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:analyzers
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:analyzers
+++Frameworks
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:frameworks
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:frameworks
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:frameworks
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:frameworks
+++Packages
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:packages
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:packages
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:packages
+++Projects
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:projects
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:projects
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:projects
+++20220325135043_createDB.cs
+++20220404131830_updateDb.cs
+++20220404132040_update2.cs
+++20220404133441_pl.cs
+++20220404134425_p2.cs
+++20220404134729_p3.cs
+++MovieStoreDbContextModelSnapshot.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\migrations\moviestoredbcontextmodelsnapshot.cs
+++Microsoft.AspNetCore.App.Analyzers
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\microsoft.netcore.app
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\microsoft.netcore.app
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\microsoft.netcore.app
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\microsoft.netcore.app
+++AutoMapper (10.1.1)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>751
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:>710
+++EntityFramework (6.4.4)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>754
+++Microsoft.AspNetCore.Authentication.JwtBearer (6.0.0)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>752
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>734
+++Microsoft.EntityFrameworkCore (6.0.0)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>748
+++Microsoft.EntityFrameworkCore.Design (6.0.0)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>750
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.0)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>749
+++Microsoft.EntityFrameworkCore.Tools (6.0.0)
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:>753
+++EntitiesLayer
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\bin\debug\net6.0\entitieslayer.dll
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\bin\debug\net6.0\entitieslayer.dll
+i:{00000000-0000-0000-0000-000000000000}:EntitiesLayer
+++20220325135043_createDB.Designer.cs
+++20220404131830_updateDb.Designer.cs
+++20220404132040_update2.Designer.cs
+++20220404133441_pl.Designer.cs
+++20220404134425_p2.Designer.cs
+++20220404134729_p3.Designer.cs
+++BusinessLayer
+i:{00000000-0000-0000-0000-000000000000}:BusinessLayer
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\bin\debug\net6.0\businesslayer.dll
+++IAuthenticationService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\iauthenticationservice.cs
+++ICustomerService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\icustomerservice.cs
+++IDirectorService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\idirectorservice.cs
+++IMovieService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\imovieservice.cs
+++IOrderService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\iorderservice.cs
+++IPlayerService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\abstracts\iplayerservice.cs
+++AuthenticationService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\authenticationservice.cs
+++CustomerService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\customerservice.cs
+++DirectorService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\directorservice.cs
+++MovieService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\movieservice.cs
+++OrderService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\orderservice.cs
+++PlayerService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\concretes\playerservice.cs
+++Logger
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\logger\
+++ConsoleLogger.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\logger\consolelogger.cs
+++ILoggerService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\logger\iloggerservice.cs
+++Mapping
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\mapping\
+++Middlewares
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\middlewares\
+++Operations
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\operations\
+++TokenOperations
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\operations\tokenoperations\
+++Token.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\operations\tokenoperations\token.cs
+++TokenHandler.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\operations\tokenoperations\tokenhandler.cs
+++ValidationRules
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\
+++FluentValidation
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\
+++CustomerValidator.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\customervalidator.cs
+++DirectorValidator.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\directorvalidator.cs
+++LoginCustomerValidator.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\logincustomervalidator.cs
+++MoviePlayerValidator.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\movieplayervalidator.cs
+++MovieValidator.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\movievalidator.cs
+++PlayerValidator.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\validationrules\fluentvalidation\playervalidator.cs
+++IEntityService.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\ientityservice.cs
+++MappingProfile.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\mapping\mappingprofile.cs
+++CustomExceptionMiddleware.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\middlewares\customexceptionmiddleware.cs
+++CustomExceptionMiddlewareExtension.cs
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:c:\users\ayse.elgoren\source\repos\moviestore\businesslayer\middlewares\customexceptionmiddlewareextension.cs
+++FluentValidation (10.3.6)
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:>709
+++Newtonsoft.Json (13.0.1)
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:>708
+++Models
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\
+++Customer.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\customer.cs
+++Director.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\director.cs
+++Genre.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\genre.cs
+++Movie.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\movie.cs
+++MoviePlayer.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\movieplayer.cs
+++Order.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\order.cs
+++Player.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\models\player.cs
+++ViewModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\
+++CustomerModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\customermodel\
+++CreateCustomerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\customermodel\createcustomermodel.cs
+++DeleteCustomerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\customermodel\deletecustomermodel.cs
+++LoginCustomerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\customermodel\logincustomermodel.cs
+++DirectorModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\directormodel\
+++DeleteDirectorModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\directormodel\deletedirectormodel.cs
+++DirectorModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\directormodel\directormodel.cs
+++DirectorsModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\directormodel\directorsmodel.cs
+++UpdateDirectorModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\directormodel\updatedirectormodel.cs
+++MovieModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\moviemodel\
+++CreateMovieModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\moviemodel\createmoviemodel.cs
+++DeleteMovieModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\moviemodel\deletemoviemodel.cs
+++MoviesModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\moviemodel\moviesmodel.cs
+++UpdateMovieModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\moviemodel\updatemoviemodel.cs
+++MoviePlayerModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\movieplayermodel\
+++MoviePlayerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\movieplayermodel\movieplayermodel.cs
+++OrderModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\ordermodel\
+++OrderModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\ordermodel\ordermodel.cs
+++OrdersModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\ordermodel\ordersmodel.cs
+++PlayerModel
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\playermodel\
+++DeletePlayerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\playermodel\deleteplayermodel.cs
+++PlayerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\playermodel\playermodel.cs
+++PlayersModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\playermodel\playersmodel.cs
+++UpdatePlayerModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\playermodel\updateplayermodel.cs
+++BaseModel.cs
+i:{72d205c9-8c70-45a8-a66d-f0a995a9e1e8}:c:\users\ayse.elgoren\source\repos\moviestore\entitieslayer\viewmodel\basemodel.cs
+++WebAPI
+i:{00000000-0000-0000-0000-000000000000}:WebAPI
+++Connected Services 
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>688
+++Properties
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\properties\
+++launchSettings.json
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\properties\launchsettings.json
+++assets
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\assets\
+++styles.css
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\assets\styles.css
+++Controllers
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\
+++AuthenticationController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\authenticationcontroller.cs
+++CustomerController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\customercontroller.cs
+++MovieController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\moviecontroller.cs
+++OrderController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\ordercontroller.cs
+++PdfController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\pdfcontroller.cs
+++PlayerController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\playercontroller.cs
+++WriterController.cs
+++PDF
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\pdf\
+++Writer_Report.pdf
+++Utility
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\utility\
+++CreatePdf.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\utility\createpdf\createpdf.cs
+++TemplateGenerator.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\utility\templategenerator.cs
+++appsettings.json
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\appsettings.json
+++appsettings.Development.json
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\appsettings.development.json
+++libman.json
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\libman.json
+++libwkhtmltox.dll
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\libwkhtmltox.dll
+++libwkhtmltox.dylib
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\libwkhtmltox.dylib
+++libwkhtmltox.so
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\libwkhtmltox.so
+++Program.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\program.cs
+++No service dependencies discovered
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>689
+++Microsoft.AspNetCore.Analyzers
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\microsoft.aspnetcore.app
+++AutoMapper.Extensions.Microsoft.DependencyInjection (8.1.1)
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>730
+++DinkToPdf (1.0.8)
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>732
+i:{a7c0d59b-6042-4873-a4a5-728487c78705}:>834
+++Microsoft.Extensions.DependencyInjection (6.0.0)
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>733
+++Swashbuckle.AspNetCore (6.2.3)
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:>731
+++DirectorController.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\controllers\directorcontroller.cs
+++20220405085922_create.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\migrations\20220405085922_create.cs
+++20220405085922_create.Designer.cs
+i:{8084bf32-9974-49b0-ae0d-fc3e1a5aa8b8}:c:\users\ayse.elgoren\source\repos\moviestore\dataaccesslayer\migrations\20220405085922_create.designer.cs
+++ICreatePds.cs
+++ICreatePdf.cs
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\utility\createpdf\icreatepdf.cs
+++NewFolder
+++CreatePdf
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\utility\createpdf\
+++Director_Report.pdf
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\pdf\director_report.pdf
+++Movie_Report.pdf
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\pdf\movie_report.pdf
+++order_Report.pdf
+++Order_Report.pdf
+i:{b257ac96-063f-4880-a0bf-0de408c61cf9}:c:\users\ayse.elgoren\source\repos\moviestore\webapi\pdf\order_report.pdf

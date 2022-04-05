@@ -14,19 +14,19 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concretes
 {
-    public class WriterService : IWriterService
+    public class DirectorService : IDirectorService
     {
-        IWriterDal _dal;
+        IDirectorDal _dal;
         public readonly IMapper _mapper;
-        public WriterService(IWriterDal dal, IMapper mapper)
+        public DirectorService(IDirectorDal dal, IMapper mapper)
         {
             _dal = dal;
             _mapper = mapper;
         }
-        public void Add(WriterModel model)
+        public void Add(DirectorModel model)
         {
-            var writer = _mapper.Map<Writer>(model);
-            var validator = new WriterValidator();
+            var writer = _mapper.Map<Director>(model);
+            var validator = new DirectorValidator();
             validator.ValidateAndThrow(writer);
             var control = _dal.IsThere(writer);
             if (control is not null)
@@ -35,10 +35,10 @@ namespace BusinessLayer.Concretes
             _dal.Add(writer);
         }
 
-        public void Delete(DeleteWriterModel model)
+        public void Delete(DeleteDirectorModel model)
         {
-            var writer = _mapper.Map<Writer>(model);
-            var validator = new WriterValidator();
+            var writer = _mapper.Map<Director>(model);
+            var validator = new DirectorValidator();
             validator.ValidateAndThrow(writer);
             var control = _dal.IsThereId(writer);
             if (control is null)
@@ -47,20 +47,20 @@ namespace BusinessLayer.Concretes
             _dal.Delete(writer);
         }
 
-        public List<WritersModel> GetAll()
+        public List<DirectorsModel> GetAll()
         {
             var listWriter= _dal.GetAll();
             if (listWriter is null)
                 throw new InvalidOperationException("Yazarlar bulunmamaktadır.");
 
-            List<WritersModel> writerModels = _mapper.Map<List<WritersModel>>(listWriter);
+            List<DirectorsModel> writerModels = _mapper.Map<List<DirectorsModel>>(listWriter);
             return writerModels;
         }
 
-        public void Update(UpdateWriterModel model)
+        public void Update(UpdateDirectorModel model)
         {
-            var writer = _mapper.Map<Writer>(model);
-            var validator = new WriterValidator();
+            var writer = _mapper.Map<Director>(model);
+            var validator = new DirectorValidator();
             validator.ValidateAndThrow(writer);
             var control = _dal.IsThereId(writer);
             if (control is null)

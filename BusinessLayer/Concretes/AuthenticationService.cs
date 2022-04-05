@@ -3,7 +3,9 @@ using BusinessLayer.Abstracts;
 using BusinessLayer.TokenOperation;
 using BusinessLayer.TokenOperation.Models;
 using BusinessLayer.ValidationRules.FluentValidation;
+using DataAccessLayer;
 using DataAccessLayer.Abstracts;
+using EntitiesLayer.Models;
 using EntitiesLayer.ViewModel.CustomerModel;
 using FluentValidation;
 using Microsoft.Extensions.Configuration;
@@ -20,25 +22,26 @@ namespace BusinessLayer.Concretes
         ICustomerDal _dal;
         public readonly IMapper _mapper;
         public IConfiguration _configuration;
-
+       private MovieStoreDbContext _context = new();
         public AuthenticationService(ICustomerDal dal, IMapper mapper, IConfiguration configuration)
         {
             _dal = dal;
             _mapper = mapper;
             _configuration = configuration;
         }
-        public Token Login(LoginCustomerModel model)
+        public async Task<Token> Login(LoginCustomerModel model)
         {
             var validator = new LoginCustomerValidator();
             validator.ValidateAndThrow(model);
-            var user = _dal.IsThereCustomer(model);
-            if (user != null)
+            var currentModel = _dal.IsThereCustomer(model);
+            if (currentModel != null)
             {
+                var updatedModel = new Customer();
                 TokenHandler handler = new TokenHandler(_configuration);
-                Token token = handler.CreateAccessToken(user);
-                user.RefreshToken = token.RefreshToken;
-                user.RefreshTokenExpireDate = token.Expiration.AddMinutes(5);
-                _dal.Update(user);
+                Token token = handler.CreateAccessToken(currentModel);
+                updatedModel.RefreshToken = token.RefreshToken;
+                updatedModel.RefreshTokenExpireDate = token.Expiration.AddMinutes(5);
+                await _context.SaveChangesAsync();
                 return token;
             }
             else

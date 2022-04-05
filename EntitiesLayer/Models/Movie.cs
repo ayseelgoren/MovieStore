@@ -7,7 +7,6 @@ namespace EntitiesLayer.Models
     public class Movie
     {
         [Key]
-        //[DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public int? DirectorId { get; set; }
         public int? GenreId { get; set; }
@@ -16,10 +15,8 @@ namespace EntitiesLayer.Models
         public bool Status { get; set; } = true;
         public double Price { get; set; }
         public Genre Genre { get; set; }
-        public Writer Writer { get; set; }
-        [JsonIgnore]
-        public ICollection<MoviePlayer> MoviePlayers { get; set; }
-
+        public virtual Director Director { get; set; }
+        public virtual ICollection<MoviePlayer> Players { get; set; }
     }
 
 }
