@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7DffjrBGEMbQFvMcpe1uGPITaFivgEarqK3pRNiNI3bKBq1oZUgMT01zP3Lw1wCJsGYA6RkX0Mi8dtKVIXIhrA==",
+  "dgSpecHash": "jsF/H64fbg9spvRKQyZEsXn5XGshNoETtFvkKcP2QNAPWrV63bu1dB4vAznDz8bS98Hg0f8vSDcRAlA+aP9Uow==",
   "success": true,
   "projectFilePath": "C:\\Users\\ayse.elgoren\\source\\repos\\MovieStore\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,7 @@
     "C:\\Users\\ayse.elgoren\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ayse.elgoren\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\ayse.elgoren\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ayse.elgoren\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\ayse.elgoren\\.nuget\\packages\\microsoft.win32.primitives\\4.0.1\\microsoft.win32.primitives.4.0.1.nupkg.sha512",
     "C:\\Users\\ayse.elgoren\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\ayse.elgoren\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
